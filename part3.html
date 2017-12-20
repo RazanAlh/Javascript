@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+    <head>
+        <title>part1</title>
+        <script>
+            var pets = ["Dog", "Cat", "Rabbit"];
+            function showpush(){
+                pets.push("Hamster");
+                alert(pets);
+            }
+             
+            function showpets(){
+            alert(pets);
+
+            }
+            
+            function showpop(){
+            pets.pop();
+            alert(pets);
+
+            }
+            
+            function showshift(){
+            pets.shift();
+            alert(pets);
+
+            }
+            
+            function showunshift(){
+            pets.unshift("Parrot");
+            alert(pets);
+
+            }
+            
+             function showslice(){
+            pets=pets.slice(2,4);
+            alert(pets);
+
+            }
+            
+            function showaddsplice(){
+             pets.splice(3,0,"bird");
+            alert(pets);
+
+            }
+             function showremovesplice(){
+            pets=pets.splice(1,2);
+            alert(pets);
+
+            }
+            function showreplacesplice(){
+            pets.splice(1,2,"Horse");
+            alert(pets);
+
+            }
+              
+            function showindexOf(){
+            var index =pets.indexOf("Rabbit");
+            alert(index);
+
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="showpets();">Show Pets Array</button>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="showpush();">Push</button>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="showpop();">Pop</button>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="showshift();">Shift</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="showunshift();">Unshift</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="showslice();">slice</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="showaddsplice();">Add Splice</button>
+        <br>  
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="showremovesplice();">Remove Splice</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="showreplacesplice();">Replace Splice</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="showindexOf();">Try indexOf</button>
+    </body>
+</html>
+
+

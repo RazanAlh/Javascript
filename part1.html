@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>part1</title>
+        <script>
+            
+            function showalert(){
+                alert("Hello T.Ibrahim I hope you have a good day ! ");
+            }
+            
+            function showconfirm(){
+            if (confirm (" Do you like today's weather?"))
+              document.location.href 
+              = " https://www.yr.no/place/Saudi_Arabia/Riyadh/Riyadh/"  ;     
+            }
+            
+            function showprompt(){
+            var coffee_kind;
+           coffee_kind = prompt ("What kind of coffee do you like to drink?");
+            document.write("Welcome to Our Coffee Club, I will order a cup of  "
+               + coffee_kind + " for you !" );
+            
+         
+
+
+            }
+            
+        </script>
+    </head>
+    <body>  
+        <button type="button" onclick="showalert();">Alert</button>
+        <br>
+        <button type="button" onclick="showconfirm();">Confirm</button>
+        <br>
+        <button type="button" onclick="showprompt();">Prompt</button>
+    </body>
+</html>
+
